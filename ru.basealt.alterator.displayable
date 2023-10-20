@@ -1,0 +1,37 @@
+<!DOCTYPE node PUBLIC
+"-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name="/" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
+
+  <interface name="ru.basealt.alterator.displayable">
+
+    <doc:doc>
+      <doc:description>
+        <doc:para>
+          Interface for displayable object.
+        </doc:para>
+      </doc:description>
+    </doc:doc>
+
+    <!-- methods -->
+    <method name="Info">
+      <arg type="ay" name="stdout_bytes" direction="out">
+        <doc:doc><doc:summary>.....</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg type='i' name='response' direction='out'>
+        <doc:doc><doc:summary>.....</doc:summary>
+        </doc:doc>
+      </arg>
+      
+      <doc:doc>
+        <doc:description>
+          <doc:para>
+            Return info to display object in GUI/
+          </doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+  </interface>
+</node>
