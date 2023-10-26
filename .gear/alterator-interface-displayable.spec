@@ -19,13 +19,14 @@ XML and polkit rules files for ru.basealt.alterator.displayable interface, using
 
 %install
 mkdir -p %buildroot%{_datadir}/dbus-1/interfaces
-install -v -p -m 644 -D ru.basealt.alterator.displayable.xml %buildroot%{_datadir}/dbus-1/interfaces
 mkdir -p %buildroot%{_sysconfdir}/polkit-1/rules.d
-install -v -p -m 644 -D 48-alterator-interface-displayable.rules %buildroot%{_sysconfdir}/polkit-1/rules.d
+
+install -v -p -m 644 -D ru.basealt.alterator.displayable.xml %buildroot%{_datadir}/dbus-1/interfaces
+install -v -p -m 644 -D 49-alterator-interface-displayable.rules %buildroot%{_sysconfdir}/polkit-1/rules.d
 
 %files
 %{_datadir}/dbus-1/interfaces/ru.basealt.alterator.displayable.xml
-%{_sysconfdir}/polkit-1/rules.d/48-alterator-interface-displayable.rules
+%{_sysconfdir}/polkit-1/rules.d/49-alterator-interface-displayable.rules
 
 %changelog
 * Tue Oct 24 2023 Aleksey Saprunov <sav@altlinux.org> 0.1.0-alt1
